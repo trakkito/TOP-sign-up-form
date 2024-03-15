@@ -33,6 +33,15 @@ body {
     background-color: rgb(248, 248, 248);
 }
 
+.em-green {
+    color: var(--green);
+    font-style: italic;
+}
+
+.phone-number span {
+    font-size: smaller;
+}
+
 .side-panel {
     background-image: url(images/leaves-sign-up.avif);
     background-repeat: no-repeat;
@@ -86,13 +95,12 @@ img {
 .top-text {
     width: 28vw;
     margin-bottom: 4vh;
-    line-height: 25px;
 }
 
 .form-section {
     background-color: white;
     position: fixed;
-    top: 60vh
+    top: 
     bottom: 35vh;
     left: 25vw;
     right: 0;
@@ -138,11 +146,21 @@ input {
     height: 25px;
     border-radius: var(--border-radius);
     border: var(--border);
+    transition: border 0.25s;
+    transition: box-shadow 0.25s;
+    transition: outline 0.25s;
+    padding-left: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid rgb(104, 149, 247);
+    box-shadow: 1px 1px 10px rgba(170, 170, 170, 0.733);
 }
 
 .form-submission {
     position: fixed;
-    top: 80vh;
+    top: clamp(75vh, 80vh, 85vh);
 }
 
 .submit-button {
@@ -157,7 +175,22 @@ button {
     border: none;
     font-family: var(--page-font-family);
     box-shadow: 1px 1px 25px rgb(170, 170, 170);
+    cursor: pointer;
+    transition: background-color 0.25s;
 }
+
+button:hover {
+    background-color: #415729;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
 
 .log-in-caption {
     font-size: 14px;
