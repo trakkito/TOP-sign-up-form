@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "ReadinessRegular";
+    src: url(fonts/Readiness-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ZapusRegular";
+    src: url(fonts/ZapusSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NorseBold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+    --green: #596D48; 
+    --error-color: rgb(226, 97, 97);
+    --label-font-size: clamp(0.8rem, 1.5vh, 2rem);
+    --page-font-size: clamp(1rem, 3vh, 2.5rem);
+    --label-font-family: "ZapusRegular", sans-serif;
+    --page-font-family:  "ReadinessRegular", sans-serif;
+    --page-font-weight: 600;
+    --border-radius: 5px;
+    --border: 1px solid #E5E7EB;
+}
+
+body {
+    font-size: var(--page-font-size);
+    font-family: var(--page-font-family);
+    margin-top: 10vh;
+    font-weight: var(--page-font-weight);
+    background-color: rgb(248, 248, 248);
+}
+
+.side-panel {
+    background-image: url(images/leaves-sign-up.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 75vw;
+}
+
+.side-logo {
+    position: fixed;
+    top: 10vh;
+    bottom: 74vh;
+    right: 75vw;
+    left: 0;
+    background-color: black;
+    opacity: 40%;
+}
+
+img {
+    position: fixed;
+    top: 11vh;
+    right: 75vw;
+    left: 5vw;
+    height: 100px;
+}
+
+.side-logo-text {
+    font-family: "NorseBold", var(--page-font-family);
+    font-size: 75px;
+    color: white;
+    position: fixed;
+    top: 13.5vh;
+    left: 10vw;
+    height: 100px;
+}
+
+.header {
+    font-size: var(--page-font-size);
+    margin-bottom: 8vh;
+}
+
+.header {
+    padding-left: 40vw;
+}
+
+.top-text {
+    width: 28vw;
+    margin-bottom: 4vh;
+    line-height: 25px;
+}
+
+.form-section {
+    background-color: white;
+    position: fixed;
+    top: 60vh
+    bottom: 35vh;
+    left: 25vw;
+    right: 0;
+    display: flex;
+    box-shadow: 0px 4px 8px rgb(221, 221, 221);
+    padding-left: 15vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info-title {
+    margin-bottom: 2vh;
+    font-family: var(--page-font-family);
+    font-size: var(--page-font-size);
+}
+
+label {
+    margin-bottom: 3px;
+}
+
+label, input {
+    display: block;
+    font-size: var(--label-font-size);
+    font-family: var(--label-font-family);
+    font-weight: 400;
+}
+
+.name-container, .email-phone-container, .password-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.password-container {
+    margin-bottom: 10px;
+}
+
+.first-name, .email, .password {
+    margin-right: 3.5vw;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+.form-submission {
+    position: fixed;
+    top: 80vh;
+}
+
+.submit-button {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    padding: 10px 40px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-family: var(--page-font-family);
+    box-shadow: 1px 1px 25px rgb(170, 170, 170);
+}
+
+.log-in-caption {
+    font-size: 14px;
+}
+
+.log-in {
+    color: var(--green)
+}

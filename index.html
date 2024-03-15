@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/charger-sport" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/readiness" type="text/css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sign-up Form</title>
+</head>
+<body>
+	<div class="side-panel">
+        <div class="side-logo"> 
+        </div>
+        <img src="images/odin-lined.png" alt="odin-logo">
+        <P class="side-logo-text">ODIN</P>
+    </div>
+
+
+    <div class="header">
+        <div class="top-text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        </div>
+        <div class="bottom-text">
+            <p>You <em>know</em> you want to.</p>
+        </div>
+    </div>
+
+
+    <div class="form-section">
+        <form action="https://httpbin.org/post" method="post">
+            <div class="info-container">
+                <div class="info-title">
+                    <p>Let's do this!</p>
+                </div>
+                <div class="input-container">
+                    <div class="name-container">
+                        <div class="first-name">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                             <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="140" placeholder="Enter your first name">
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">
+                                Last Name
+                            </label>
+                             <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="140" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="email-phone-container">
+                        <div class="email">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input type="email" name="email" id="email" required minlength="6" maxlength="140" placeholder="Enter your email">
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-number">
+                                Phone Number<span class="optional"> (optional)</span>
+                            </label>
+                            <input type="tel" name="phone-number" id="phone-number" min="10" max="10" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="password-container">
+                        <div class="password">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input class="error" type="password" name="password" id="password" required minlength="8" placeholder="Enter your password"> 
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirm-password">
+                                Confirm Password
+                            </label> 
+                            <input class="error" type="password" name="confirm-password" id="confirm-password" required minlength="8" placeholder="Confirm your password">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-submission">
+                <div class="submit-button">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="log-in-caption">
+                    <p>Already have an account? <span class=log-in>Log in</span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
